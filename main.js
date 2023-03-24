@@ -27,22 +27,23 @@ const posts = [
   },
 ];
 
-const rowEl = document.querySelector(".row");
-console.log(posts);
+const postEls = [];
 
 posts
-  .map((thisposts) => {
+  .map((thispost) => {
     return `
       <div class="col">
         <div class="card">
-          <img src="${thisposts.image}" alt="" class="card-img-top">
+          <img src="${thispost.image}" alt="" class="card-img-top">
           <div class="card-body">
-            <h3>${thisposts.title}</h3>
-            <p>${thisposts.text}</p>
+            <h3>${thispost.authorName}</h3>
+            <p>${thispost.text}</p>
           </div>
         </div>
       </div>`;
   })
   .forEach((markup) => {
-    rowEl.innerHTML += markup;
+    postEls.push(markup);
   });
+
+document.querySelector(".post").innerHTML = postEls.join("");
