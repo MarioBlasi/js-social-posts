@@ -1,10 +1,11 @@
 // const  immagineRandom = "https://unsplash.it/300/300?imag="
+
 const posts = [
   {
     id: 1,
     authorName: "Phil Mangione",
     authorPhoto:
-      "https://fastly.picsum.photos/id/910/300/300.jpg?hmac=GPismqzJDMPj5TFrxPYdDH8VDZ6KJqKvRI7-SHyErIA",
+      "https://fastly.picsum.photos/id/987/300/300.jpg?hmac=CL-U9z0TBiCphrNbRUFhFft9TkMq7Brh17HWTbdYNfc",
     date: "03-22-2023",
     text: "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.",
     image: "https://unsplash.it/300/300?image=",
@@ -107,3 +108,28 @@ for (let i = 0; i < posts.length; i++) {
     `;
   card.innerHTML += markup;
 }
+
+// Seleziona il pulsante "Mi Piace"
+const likeButton = document.querySelector(".like-button");
+
+// Inizializzo il contatore dei "Mi Piace" a 0
+let like_Counter = 0;
+
+// Inizializzo l'array degli id dei post ai quali hai messo il "Mi Piace"
+let likedPosts = [];
+
+// Aggiungo un evento di click al pulsante "Mi Piace"
+likeButton.addEventListener("click", () => {
+  // Cambia il colore del testo del pulsante
+  likeButton.style.color = "blue";
+
+  // Incrementa il contatore dei "Mi Piace"
+  like_Counter++;
+  likeButton.innerHTML = `${like_Counter} Mi Piace`;
+
+  // Aggiungi l'id del post all'array degli id dei post ai quali hai messo il "Mi Piace"
+  likedPosts.push(postId);
+
+  // Salvo l'array degli id dei post ai quali hai messo il "Mi Piace"
+  localStorage.setItem("likedPosts", JSON.stringify(likedPosts));
+});
