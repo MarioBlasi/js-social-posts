@@ -1,31 +1,52 @@
-const immagineRandom = "https://unsplash.it/300/300?imag";
+// const  immagineRandom = "https://unsplash.it/300/300?imag="
 const posts = [
   {
     id: 1,
     authorName: "Phil Mangione",
-    authorPhoto: immagineRandom,
+    authorPhoto:
+      "https://fastly.picsum.photos/id/910/300/300.jpg?hmac=GPismqzJDMPj5TFrxPYdDH8VDZ6KJqKvRI7-SHyErIA",
     date: "03-22-2023",
     text: "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.",
-    image: immagineRandom,
+    image: "https://unsplash.it/300/300?image=",
     likes: 80,
   },
   {
     id: 2,
     authorName: "John Doe",
-    authorPhoto: immagineRandom,
+    authorPhoto: "https://unsplash.it/300/300?imag=",
     date: "03-20-2023",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius quis elit non volutpat. Sed gravida nunc at nunc posuere, sed aliquam sapien hendrerit.",
-    image: immagineRandom,
+    image: "https://unsplash.it/300/300?image",
     likes: 42,
   },
   {
     id: 3,
     authorName: "Jane Smith",
-    authorPhoto: immagineRandom,
+    authorPhoto: "https://unsplash.it/300/300?image",
     date: "03-18-2023",
     text: "Donec sit amet justo vel risus dignissim molestie nec sit amet arcu. In hac habitasse platea dictumst. Ut sagittis massa vel iaculis suscipit.",
-    image: immagineRandom,
-    likes: 25,
+    image: "https://unsplash.it/300/300?image",
+    likes: 125,
+  },
+  {
+    id: 4,
+    authorName: "Jane Smith",
+    authorPhoto: "https://unsplash.it/300/300?image=",
+    date: "03-8-2023",
+    text: "Donec sit amet justo vel risus dignissim molestie nec sit amet arcu. In hac habitasse platea dictumst. Ut sagittis massa vel iaculis suscipit.",
+    image:
+      "https://fastly.picsum.photos/id/258/300/300.jpg?hmac=zR2WW2PIXyiboQTsS4SBS4PwD80sI5dtJoAjovkSrG4",
+    likes: 215,
+  },
+  {
+    id: 5,
+    authorName: "Jane Smith",
+    authorPhoto:
+      "https://fastly.picsum.photos/id/118/300/300.jpg?hmac=y5ogOME73iMgH2ExOcgp4s7H59GHjryoeyqvOwb0oeY",
+    date: "02-18-2023",
+    text: "Donec sit amet justo vel risus dignissim molestie nec sit amet arcu. In hac habitasse platea dictumst. Ut sagittis massa vel iaculis suscipit.",
+    image: "https://unsplash.it/300/300?image",
+    likes: 252,
   },
 ];
 
